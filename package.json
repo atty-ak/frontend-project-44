@@ -9,7 +9,8 @@
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
     "brain-gcd": "bin/brain-gcd.js",
-    "brain-progression": "bin/brain-progression.js"
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
 },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/Atty-code/frontend-project-44.git"
   },
-  "author": "",
+  "author": "Andrey K",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Atty-code/frontend-project-44/issues"
