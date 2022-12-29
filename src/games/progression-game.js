@@ -7,15 +7,15 @@ const getRoundGame = () => {
   const randomNum = getRandomNumber(1);
   const progressionStep = getRandomNumber(1, 10);
   const progressionLength = getRandomNumber(5, 10);
-  const result = [];
+  const numbers = [];
   const maxNumProgression = (progressionLength - 1) * progressionStep + randomNum;
   for (let i = randomNum; i <= maxNumProgression; i += progressionStep) {
-    result.push(i);
+    numbers.push(i);
   }
-  const hiddenNum = getRandomNumber(0, result.length - 1);
-  const correctAnswer = result[hiddenNum];
-  result[hiddenNum] = '..';
-  const correctQuestion = result.join(' ');
+  const hiddenNum = getRandomNumber(0, numbers.length - 1);
+  const correctAnswer = numbers[hiddenNum];
+  numbers[hiddenNum] = '..';
+  const correctQuestion = numbers.join(' ');
   return [correctQuestion, String(correctAnswer)];
 };
 
