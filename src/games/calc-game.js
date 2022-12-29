@@ -7,7 +7,7 @@ const getRoundGame = () => {
   const availableOperators = ['+', '-', '*'];
   const randomNumOperator = Math.floor(Math.random() * availableOperators.length);
   const randomOperator = availableOperators[randomNumOperator];
-  let correctAnswer = 0;
+  let correctAnswer;
   if (randomOperator === '+') {
     correctAnswer = randomFirstNum + randomSecondNum;
   } else if (randomOperator === '-') {
