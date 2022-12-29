@@ -1,10 +1,11 @@
 import index from '../index.js';
+import getRandomNumber from '../utility.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
 const getRoundGame = () => {
-  const randomFirstNum = Math.ceil(Math.random() * 100);
-  const randomSecondNum = Math.ceil(Math.random() * 100);
+  const randomFirstNum = getRandomNumber(1);
+  const randomSecondNum = getRandomNumber(1);
   const maxCommonDivisor = randomFirstNum > randomSecondNum ? randomSecondNum : randomFirstNum;
   let correctAnswer;
   for (let i = maxCommonDivisor; i >= 0; i -= 1) {

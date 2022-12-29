@@ -1,12 +1,12 @@
 import index from '../index.js';
+import getRandomNumber from '../utility.js';
 
 const description = 'What is the result of the expression?';
 const getRoundGame = () => {
-  const randomFirstNum = Math.ceil(Math.random() * 20);
-  const randomSecondNum = Math.ceil(Math.random() * 10);
+  const randomFirstNum = getRandomNumber(1, 20);
+  const randomSecondNum = getRandomNumber(1, 20);
   const availableOperators = ['+', '-', '*'];
-  const randomNumOperator = Math.floor(Math.random() * availableOperators.length);
-  const randomOperator = availableOperators[randomNumOperator];
+  const randomOperator = availableOperators[getRandomNumber(0, 2)];
   let correctAnswer;
   if (randomOperator === '+') {
     correctAnswer = randomFirstNum + randomSecondNum;
