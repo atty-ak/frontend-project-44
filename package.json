@@ -2,8 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/Atty-code/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Atty-code/frontend-project-44/actions)",
-  "main": "index.js",
+  "description": "Brain Games",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
