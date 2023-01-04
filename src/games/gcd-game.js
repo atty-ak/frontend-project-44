@@ -3,19 +3,17 @@ import getRandomNumber from '../utility.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
+const getGcd = (num1, num2) => {
+  if (num1 === 0) return num2;
+  return getGcd(num2 % num1, num1);
+};
+
 const getRoundGame = () => {
-  const randomFirstNum = getRandomNumber(1);
-  const randomSecondNum = getRandomNumber(1);
-  const maxCommonDivisor = randomFirstNum > randomSecondNum ? randomSecondNum : randomFirstNum;
-  let correctAnswer;
-  for (let i = maxCommonDivisor; i >= 0; i -= 1) {
-    if (randomFirstNum % i === 0 && randomSecondNum % i === 0) {
-      correctAnswer = i;
-      break;
-    }
-  }
+  const randomFirstNum = getRandomNumber(1, 15);
+  const randomSecondNum = getRandomNumber(1, 30);
   const correctQuestion = `${randomFirstNum} ${randomSecondNum}`;
-  return [correctQuestion, String(correctAnswer)];
+  const correctAnswer = String(getGcd(randomFirstNum, randomSecondNum));
+  return [correctQuestion, correctAnswer];
 };
 
 export default () => {
