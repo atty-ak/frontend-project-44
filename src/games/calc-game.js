@@ -1,4 +1,4 @@
-import index from '../index.js';
+import runEngine from '../index.js';
 import getRandomNumber from '../utility.js';
 
 const description = 'What is the result of the expression?';
@@ -32,5 +32,5 @@ const getRoundGame = () => {
 };
 
 export default () => {
-  index(description, getRoundGame);
+  runEngine(description, getRoundGame);
 };

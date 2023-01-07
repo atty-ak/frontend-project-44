@@ -1,4 +1,4 @@
-import index from '../index.js';
+import runEngine from '../index.js';
 import getRandomNumber from '../utility.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -13,5 +13,5 @@ const getRoundGame = () => {
 };
 
 export default () => {
-  index(description, getRoundGame);
+  runEngine(description, getRoundGame);
 };

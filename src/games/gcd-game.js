@@ -1,4 +1,4 @@
-import index from '../index.js';
+import runEngine from '../index.js';
 import getRandomNumber from '../utility.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
@@ -17,5 +17,5 @@ const getRoundGame = () => {
 };
 
 export default () => {
-  index(description, getRoundGame);
+  runEngine(description, getRoundGame);
 };
