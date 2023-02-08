@@ -10,7 +10,7 @@
 
 1. Clone the repo
    ```bash
-   git clone https://github.com/Atty-code/frontend-project-44.git
+   git clone https://github.com/atty-ak/frontend-project-44.git
    ```
 
 2. Install packages dependencies
